@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+{% block content %}
+
+
+<h2>Kontakt</h2>
+
+  <ul>
+	<li>e-mail : m@wp.pl</li>
+	<li>telefon: 555</li>
+  </ul>
+
+
+    <section id="contact" class="clearfix">
+      <header>
+        <h2>Kontakt</h2>
+      </header>
+
+     <p><textarea cols="25" rows="7"
+                  >Wiadomość</textarea></p>
+        <p><input  value="Wyślij do mnie wiadomość" class="button" /></p>
+      </section>
+
+  <form action="/mypage/contact" id="usrform" method="POST">
+    Imię:
+    <input type="text" name="usrname">
+    <input type="submit">
+    </form>
+
+</body>
+</html>
+
+
+
+{% endblock %}
